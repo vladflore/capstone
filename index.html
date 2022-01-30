@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <h3>Book Management App</h3>
+                </section>
+                <section>
+                    <ul>
+                        <li>Capstone project for the Udacity Cloud Developer Nanodegree Program</li>
+                        <li>It was a choice between microservices based app or serverless app</li>
+                        <li>Serverless Simple Book Management App</li>
+                    </ul>
+                </section>
+                <section>The technology stack</section>
+                <section>
+                    <section>ReactJs</section>
+                    <section>NodeJs</section>
+                    <section>Serverless Framework</section>
+                    <section>
+                        <div>Amazon Web Services</div>
+                        <p class="fragment" data-fragment-index="1">IAM</p>
+                        <p class="fragment" data-fragment-index="2">Lambda</p>
+                        <p class="fragment" data-fragment-index="3">API Gateway</p>
+                        <p class="fragment" data-fragment-index="4">S3</p>
+                        <p class="fragment" data-fragment-index="5">DynamoDB</p>
+                        <p class="fragment" data-fragment-index="6">CloudWatch</p>
+                        <p class="fragment" data-fragment-index="7">X-Ray</p>
+                        <p class="fragment" data-fragment-index="8">Cloud Formation</p>
+                    </section>
+                    <section>Auth0</section>
+                </section>
+                <section>Features(functional and non-functional)</section>
+                <section>
+                    <section>Authorization (JWKS)</section>
+                    <section>CRUD operations</section>
+                    <section>Upload (via S3 SignedUrl) and fetch images</section>
+                    <section>HTTP requests validation</section>
+                    <section>Payload/Model validation</section>
+                    <section>Logging</section>
+                    <section>Distributed tracing</section>
+                    <section>Lambda functions size reduction</section>
+                    <section>Granular access management(IAM roles per function)</section>
+                </section>
+                <section>
+                    <img src="./images/udacity-capstone-FINISHED.gif" alt="" style="border: 0px;">
+                </section>
+                <section>
+                    <img src="./images/sls-deploy.gif" alt="" style="border: 0px;">
+                </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
